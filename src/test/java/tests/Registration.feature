@@ -10,7 +10,7 @@ Scenario: Register with mandatory fields
 	And Selects Provacy policy field 
 	And Clicks on continue button
 	Then Account should get successfully created 
-	
+	@smoke
 Scenario: Register with all fields
 	Given User navigates to Register Account page 
 	When User enters firstname "balu" into the First name field

@@ -8,12 +8,12 @@ public class Login {
 		System.out.println(">>User got navigated to login Page");
 	}
 
-	@When("User enters valid email address {string}")
+	@When("^User enters valid email address (.+)$")
 	public void user_enters_valid_email_address(String emailAddressText) {
 		System.out.println(">>User enters valid email address" + emailAddressText);
 	}
 
-	@When("enters valid password {string}")
+	@When("^enters valid password (.+)$")
 	public void enters_valid_password(String passwordText) {
 		System.out.println(">>User enters valid password" + passwordText);
 	}
