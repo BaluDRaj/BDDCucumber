@@ -17,7 +17,7 @@ public class Login {
 	public void enters_valid_password(String passwordText) {
 		System.out.println(">>User enters valid password" + passwordText);
 	}
-
+	
 	@When("clicks on Login button")
 	public void clicls_on_login_button() {
 		System.out.println(">>User clicks on login button");
@@ -38,10 +38,11 @@ public class Login {
 		System.out.println(">>User enters invalid password" + invalidpasswordText);
 	}
 
-	@Then("User should get a proper warning message")
+	@Then("^User should get a proper warning message$")
 	public void user_should_get_a_proper_warning_message() {
 		System.out.println(">>User gets warning message");
 	}
+	
 
 	@When("User dont enter any credentials")
 	public void user_dont_enter_any_credentials() {
